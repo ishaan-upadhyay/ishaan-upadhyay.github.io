@@ -1,0 +1,95 @@
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ishaan Upadhyay's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+            <header>
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                        <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Intro -->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    Plagiarism <strong>Detector</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Using CNNs</p>
+                <img src="img/portfolio-05.png" alt="Logo for the project" class="intro__img">
+            </section>
+
+            <!-- Item description -->
+            <section class="portfolio__item--individual">
+                <p>This project was part of my coursework for the Udacity Machine Learning Engineer nanodegree.</p>
+                <p> I made use of Amazon's SageMaker, S3 and Lambda services. Meant to perform binary classification (plagiarized or not),
+                    the model made use of several computed similarity features to classify texts given a source text to compare against.
+                </p>
+                <img src="img/portfolio-details.png">
+                <p> The similarity features I used were containment and longest common subsequence between the answer and source texts. Containment 
+                    was calculated by computing the number of n-grams (where an n-gram is a subset of either text consisting of n words) shared between
+                    the answer and source, followed by dividing by the number of n-grams in the answer text. For example, for a answer text which is 
+                    a word-for-word copy of the source text, but with sentences in a different order, would have a 1-gram containment of 1 (all words in the 
+                    source appear in the answer, with the answer having the same word count as the source). 
+                </p>
+                <p>The second feature was normalized longest common subsequence, where the length of the longest set of words that appears in both the source 
+                    and answer (there may be other words in between) is divided by the length of the answer text. This required a dynamic programming approach.
+                    Given these 2 features, a random forest predictor had an accuracy of 100% on the test set, but as noted, this was likely due to limited
+                    variability in the dataset used. 
+                </p>
+                <p><i class="fa-brands fa-github"></i> <strong><a href="https://github.com/ishaan-upadhyay/plagiarism-detection">Github Repository</a> </strong></p>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <a href="mailto:ishaanupadhyay1004@gmail.com" class="footer__link">Send me an email!</a>
+                <ul class="social-list">
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://github.com/ishaan-upadhyay">
+                        <i class="fa-brands fa-github"></i>
+                        </a></li>
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://www.linkedin.com/in/ishaan-upadhyay/">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a></li>
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://twitter.com/ishaanu_">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                </ul>
+            </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

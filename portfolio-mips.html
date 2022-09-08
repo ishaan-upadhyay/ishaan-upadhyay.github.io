@@ -1,0 +1,89 @@
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ishaan Upadhyay's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+            <header>
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                        <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Intro -->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    Traffic <strong>Racer</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">MIPS</p>
+                <img src="img/portfolio-04.png" alt="Logo for the project" class="intro__img">
+            </section>
+
+            <!-- Item description -->
+            <section class="portfolio__item--individual">
+                <p>This project was part of my coursework for CSCB58 - Computer Organization at the University of Toronto.</p>
+                <p>This was a solo project built in Assembly. We used the MARS Assembly Simulator (based on MIPS-32 architecture) for 
+                    the coursework in this class. The end goal of this project was to build a simple functioning 2D game using keyboard
+                    inputs and a bitmap display.
+                </p>
+                <img src="img/portfolio-details.png">
+                <p>The features I successfully implemented included: random car spawns (speeds, lanes) using a psuedo-random number generator,
+                    multiple speeds for the player car, a live score bar, a lives remaining bar and hard mode after a specific amount of time 
+                    had passed. 
+                </p>
+                <p><i class="fa-brands fa-github"></i> <strong><a href="https://github.com/ishaan-upadhyay/B58TrafficRacer">Github Repository</a> </strong></p>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <a href="mailto:ishaanupadhyay1004@gmail.com" class="footer__link">Send me an email!</a>
+                <ul class="social-list">
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://github.com/ishaan-upadhyay">
+                        <i class="fa-brands fa-github"></i>
+                        </a></li>
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://www.linkedin.com/in/ishaan-upadhyay/">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a></li>
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://twitter.com/ishaanu_">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                </ul>
+            </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

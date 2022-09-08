@@ -1,0 +1,91 @@
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ishaan Upadhyay's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+            <header>
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <ul class="nav__list">
+                            <li class="nav__item"><a href="index.html#home" class="nav__link">Home</a></li>
+                            <li class="nav__item"><a href="index.html#services" class="nav__link">My Services</a></li>
+                            <li class="nav__item"><a href="index.html#about" class="nav__link">About Me</a></li>
+                            <li class="nav__item"><a href="index.html#work" class="nav__link">My Work</a></li>
+                        </ul>
+                    </ul>
+                </nav>
+            </header>
+            
+            <!-- Intro -->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    Dog Breed <strong>Classifier</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">Using CNNs</p>
+                <img src="img/portfolio-05.png" alt="Logo for the project" class="intro__img">
+            </section>
+
+            <!-- Item description -->
+            <section class="portfolio__item--individual">
+                <p>This project was part of my coursework for the Udacity Machine Learning Engineer nanodegree. This was also the capstone project.</p>
+                <p>In this project, I had to use convolutional neural networks to process user-supplied images of dogs and classify their breeds.
+                    Dog breed classification is an open issue, mainly due to minimal variation between some breeds, as well as breeds which are different
+                    only due to colour. 
+                </p>
+                <img src="img/portfolio-details.png">
+                <p>The code made use of cross-entropy loss. 2 different models were built - one trained from scratch, and another which used transfer
+                    learning to build on a ResNet50 base model. During training, all images were normalized to 224 x 224 pixels and transformed
+                    using a predefined Pytorch transform. The transfer learning model eventually achieved an accuracy of 85%. 
+                </p>
+                <p><i class="fa-brands fa-github"></i> <strong><a href="https://github.com/ishaan-upadhyay/dog-classifier-capstone">Github Repository</a> </strong></p>
+            </section>
+            
+            <!-- Footer -->
+            <footer>
+                <a href="mailto:ishaanupadhyay1004@gmail.com" class="footer__link">Send me an email!</a>
+                <ul class="social-list">
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://github.com/ishaan-upadhyay">
+                        <i class="fa-brands fa-github"></i>
+                        </a></li>
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://www.linkedin.com/in/ishaan-upadhyay/">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a></li>
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://twitter.com/ishaanu_">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                </ul>
+            </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>

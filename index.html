@@ -1,0 +1,184 @@
+<!DOCTYPE <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ishaan Upadhyay's Portfolio</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous">
+        <!-- Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;900&family=Source+Code+Pro&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+            <header>
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <button class="nav-toggle" aria-label="toggle navigation">
+                    <span class="hamburger"></span>
+                </button>
+                <nav class="nav">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                        <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About Me</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <!-- Introduction -->
+            <section class="intro" id="home">
+                <h1 class="section__title section__title--intro">
+                    Hi, I'm <strong>Ishaan Upadhyay</strong>
+                </h1>
+                <p class="section__subtitle section__subtitle--intro">SOFTWARE DEVELOPER</p>
+                <img src="img/ishaan-01.jpg" alt="a picture of Jane Smith smiling" class="intro__img">
+            </section>
+
+            <!-- My services -->
+            <section class="my-services" id="services">
+                <h2 class="section__title section__title--services">What I do</h2>
+                <div class="services">
+                    <div class="service">
+                        <h3>Machine Learning</h3>
+                        <p>With two nanodegrees from Udacity, as well as a few personal projects under my belt,
+                            I'm very familiar with the world of machine learning and artificial intelligence. My projects
+                            in this field include a movie review sentiment analyzer, plagiarism detector and dog breed classifier.
+                        </p>
+                    </div> <!-- service -->
+
+                    <div class="service">
+                        <h3>Python</h3>
+                        <p>I have approximately 3 years worth of experience in Python, cultivated primarily
+                            through self-teaching and building projects. Most of my machine learning work was done 
+                            in Python using libraries such as Jupyter, OpenCV, Pytorch and TensorFlow. I've also developed
+                            a Discord bot using Python and Discord.py.
+                        </p>
+                    </div> <!-- service -->
+
+                    <div class="service">
+                        <h3>Mobile App Development</h3>
+                        <p>I have some experience with developing mobile applications using Java and Android Studio.
+                            I have plans to learn native development in Kotlin as well. I also have experience with SQL 
+                            and NoSQL technologies, as I've used Firebase for my mobile devlopment projects. 
+                        </p>
+                    </div> <!-- service -->
+                </div> <!-- services -->
+                <a href="#work" class="btn">My Work</a>
+            </section>
+
+            <!-- About me -->
+            <section class="about-me" id="about">
+                <h2 class="section__title section__title--about">Who I am</h2>
+                <p class="section__subtitle section__subtitle--about">A co-op student passionate about programming</p>
+
+                <div class="about-me__body">
+                    <p>Hi! I'm currently an undergraduate student at the University of Toronto, working towards a Bachelor of Science.
+                       I'm focusing on Computer Science, more specifically the Software Engineering stream,
+                       and I'm always learning about new ideas in the field.
+                    </p>
+                    <p>Programming-wise, the languages I have the most experience in are Python, Java and C.
+                       I've also done development work in HTML, CSS, JavaScript and Assembly.
+                       Besides that, my hobbies include playing the guitar, cooking and creative writing.
+                       I'm fluent in English and Hindi. I also have some experience with French.
+                    </p>
+                </div>
+
+                <img src="img/uoft_front.png" alt="Jane leaning against a bus" class="about-me__img">
+            </section>
+
+            <!-- My work -->
+            <section class="my-work" id="work">
+                <h2 class="section__title">My work</h2>
+                <p class="section_subtitle">Some of my past projects</p>
+
+                <div class="portfolio">
+                    
+                    <!-- Portfolio item 1-->
+                    <a href="portfolio-kesara.html" class="portfolio__item">
+                        <img src="img/portfolio-01.png" alt="" class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio item 2-->
+                    <a href="portfolio-ssp.html" class="portfolio__item">
+                        <img src="img/portfolio-02.png" alt="" class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio item 3-->
+                    <a href="https://www.kaggle.com/code/ishaanupadhyay/mvp-prediction-random-forest-and-others" class="portfolio__item">
+                        <img src="img/portfolio-03.png" alt="" class="portfolio__img">
+                    </a>
+                    
+                    <!-- Portfolio item 4-->
+                    <a href="portfolio-mips.html" class="portfolio__item">
+                        <img src="img/portfolio-04.png" alt="" class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio item 5-->
+                    <a href="portfolio-classifier.html" class="portfolio__item">
+                        <img src="img/portfolio-05.png" alt="" class="portfolio__img">
+                    </a>
+                    <!-- Portfolio item 6-->
+                    <a href="portfolio-detector.html" class="portfolio__item">
+                        <img src="img/portfolio-06.png" alt="" class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio item 7-->
+                    <a href="#" class="portfolio__item">
+                        <img src="portfolio-07.jpg" alt="" class="portfolio__img">
+                    </a>
+
+                    <!-- Portfolio item 8-->
+                    <a href="#" class="portfolio__item">
+                        <img src="portfolio-08.jpg" alt="" class="portfolio__img">
+                    </a>
+                    
+                    <!-- Portfolio item 9-->
+                    <a href="#" class="portfolio__item">
+                        <img src="portfolio-09.jpg" alt="" class="portfolio__img">
+                    </a>
+                    
+                    <!-- Portfolio item 10-->
+                    <a href="#" class="portfolio__item">
+                        <img src="portfolio-10.jpg" alt="" class="portfolio__img">
+                    </a>                    
+                </div>
+            </section>
+
+            <!-- Footer -->
+            <footer>
+                <a href="mailto:ishaanupadhyay1004@gmail.com" class="footer__link">Send me an email!</a>
+                <ul class="social-list">
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://github.com/ishaan-upadhyay">
+                        <i class="fa-brands fa-github"></i>
+                        </a></li>
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://www.linkedin.com/in/ishaan-upadhyay/">
+                        <i class="fa-brands fa-linkedin"></i>
+                        </a></li>
+                    <li class="social-list__item"><a class="social-list__link"
+                        href="https://twitter.com/ishaanu_">
+                        <i class="fa-brands fa-twitter"></i>
+                        </a></li>
+                </ul>
+            </footer>
+
+        <script src="js/index.js"></script>
+    </body>
+</html>
